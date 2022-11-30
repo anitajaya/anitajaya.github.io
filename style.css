@@ -163,10 +163,18 @@ body {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	width: 80%;
+	background: url('./assets/IMG_0165.jpeg');
+	background-size: cover;
+    background-position: center;
+    padding: 10px;
+    border-radius: 5px;
 }
 .panel-3 .content .desc .quote , .panel-4 .content .desc .quote, .panel-6 .content .desc .quote, .panel-7 .content .desc .quote{
 	padding: 20px;
 	text-transform: initial;
+	background: #0000002e;
+    color: white;
+    border-radius: 5px;
 }
 .panel-3 .content .desc .quote .tutor, .panel-4 .content .desc .quote .tutor , .panel-6 .content .desc .quote .tutor, .panel-7 .content .desc .quote .tutor {
 	font-size: 16px;
@@ -432,7 +440,7 @@ body {
 	transition: 0.3s;
 }
 .speaker img:hover{
-	background: #ffdbac ;
+	background: #ac995e ;
 
 }
 .speaker .play-on{
