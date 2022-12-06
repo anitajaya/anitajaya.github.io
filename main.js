@@ -102,6 +102,7 @@ for (var x = 0; x < animation.length; x++){
 }
 
 function toggleAnimation(i){
+  console.log(i, animation)
   for (var x = 0; x < animation.length; x++){
     if (i === x){
       addClass(animation[x], 'active');
@@ -249,4 +250,13 @@ $('.speaker .play-on').click(function(){
   $('.play-on').hide();
   $('.play-off').show();
   audio.pause();
+})
+
+$('#OpenEnvitation').click(function(){
+  $('.modal').hide('slow');
+  $('.play-off').hide();
+  $('.play-on').show();
+  audio.play();
+  addClass(animation[1], 'active');
+  addClass(wrap, animation[1].getAttribute('data-animation'));
 })

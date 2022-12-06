@@ -17,10 +17,23 @@
   <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
+  <div class="modal">
+    <div class="content">
+      <div>The Wedding of</div>
+      <div class="name-bride">Jaya &amp; Anita</div>
+      <div>
+        <button class="btn" id="OpenEnvitation">
+            <span><img src="./assets/Message.svg" width="20px" alt=""></span> <span>Buka Undangan</span>
+        </button>
+      </div>
+  </div>
+  </div>
   <div class="speaker">
     <img class="play-off" src="./assets/Sound-Off.svg" alt="">
     <img class="play-on" src="./assets/Sound-On.svg" alt="">
-    <audio id="audio" src="./assets/Aku_KamudanSamudra.mp3" preload="auto" loop></audio>
+    <audio id="audio"  autoplay>
+      <source src="./assets/Aku_KamudanSamudra.mp3" type="audio/mpeg">
+    </audio>
   </div>
   <div class="site-wrap">
       <div class="panel-wrap animate--none">
@@ -45,7 +58,7 @@
             <div class="settings">
               <span class="panel__zoom js-zoom">View All</span>
               <div class="panel__animation-list">
-                <span class="js-animation active" data-animation="animate--none">None</span>
+                <span class="js-animation" data-animation="animate--none">None</span>
                 <span class="js-animation" data-animation="animate--shrink">Shrink</span>
                 <span class="js-animation" data-animation="animate--tilt">Tilt</span>
                 <span class="js-animation" data-animation="animate--tilt2">Tilt-2</span>
